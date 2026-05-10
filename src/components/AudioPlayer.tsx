@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import { Heart, Pause, Play, Volume2, VolumeX } from "lucide-react";
 
+// Warm, royalty-free instrumental piano (Pixabay, free for commercial use).
 const SONG_URL =
-  "https://cdn.pixabay.com/download/audio/2022/10/30/audio_347111d265.mp3?filename=relaxing-mountains-rivers-streams-running-water-18178.mp3";
-// Soft instrumental fallback. Replace with any preferred track.
+  "https://cdn.pixabay.com/download/audio/2024/02/27/audio_71a16f9c79.mp3?filename=relaxing-piano-music-191708.mp3";
+const SONG_FALLBACK =
+  "https://cdn.pixabay.com/download/audio/2022/03/15/audio_4f3c3a7ab8.mp3?filename=the-best-jazz-club-in-new-orleans-164472.mp3";
 
 export function AudioPlayer() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
