@@ -4,8 +4,4 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
-User-agent: WhatsApp
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
+Sitemap: https://happymothersdaypo.netlify.app/sitemap.xml
