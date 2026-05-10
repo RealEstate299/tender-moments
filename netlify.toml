@@ -1,8 +1,8 @@
 [build]
-  command = "bun run build"
+  command = "vite build"
   publish = "dist/client"
 
-# Important for SSR (TanStack Start)
+# Required for TanStack Start SSR
 [[redirects]]
   from = "/*"
   to = "/.netlify/functions/server"
