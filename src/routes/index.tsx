@@ -14,13 +14,27 @@ export const Route = createFileRoute("/")({
         content:
           "A heartfelt Mother's Day 2026 tribute with a warm song, gentle words, and love for the strongest, kindest woman we know.",
       },
-      { property: "og:title", content: "Happy Mother's Day 2026" },
+      { property: "og:title", content: "Happy Mother's Day 2026 ❤️" },
       {
         property: "og:description",
-        content: "To the strongest, kindest, and most loving woman we know. ❤️",
+        content: "To the strongest, kindest, and most loving woman we know.",
       },
+      { property: "og:type", content: "website" },
+      { property: "og:image", content: "/og-image.jpg" },
+      { property: "og:image:width", content: "1280" },
+      { property: "og:image:height", content: "672" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Happy Mother's Day 2026 ❤️" },
+      {
+        name: "twitter:description",
+        content: "To the strongest, kindest, and most loving woman we know.",
+      },
+      { name: "twitter:image", content: "/og-image.jpg" },
+      { name: "theme-color", content: "#f5d6c6" },
     ],
     links: [
+      { rel: "icon", type: "image/png", href: "/favicon.png" },
+      { rel: "apple-touch-icon", href: "/favicon.png" },
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap",
