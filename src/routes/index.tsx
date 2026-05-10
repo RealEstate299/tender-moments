@@ -20,9 +20,18 @@ export const Route = createFileRoute("/")({
         content: "To the strongest, kindest, and most loving woman we know.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://happymothersday2026.lovable.app/" },
+      { property: "og:site_name", content: "Happy Mother's Day 2026" },
       { property: "og:image", content: "/og-image.jpg" },
-      { property: "og:image:width", content: "1280" },
-      { property: "og:image:height", content: "672" },
+      { property: "og:image:secure_url", content: "/og-image.jpg" },
+      { property: "og:image:type", content: "image/jpeg" },
+      { property: "og:image:width", content: "1216" },
+      { property: "og:image:height", content: "640" },
+      {
+        property: "og:image:alt",
+        content:
+          "Happy Mother's Day 2026 — elegant floral card with the message 'We love you endlessly'.",
+      },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Happy Mother's Day 2026 ❤️" },
       {
@@ -30,11 +39,17 @@ export const Route = createFileRoute("/")({
         content: "To the strongest, kindest, and most loving woman we know.",
       },
       { name: "twitter:image", content: "/og-image.jpg" },
+      {
+        name: "twitter:image:alt",
+        content: "Happy Mother's Day 2026 — floral tribute card.",
+      },
       { name: "theme-color", content: "#f5d6c6" },
     ],
     links: [
-      { rel: "icon", type: "image/png", href: "/favicon.png" },
-      { rel: "apple-touch-icon", href: "/favicon.png" },
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16.png" },
+      { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32.png" },
+      { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap",
