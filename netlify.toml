@@ -2,8 +2,7 @@
   command = "vite build"
   publish = "dist/client"
 
-# Critical for TanStack Start SSR
 [[redirects]]
   from = "/*"
-  to = "/.netlify/functions/server"
+  to = "/.netlify/functions/__tanstack_start"
   status = 200
