@@ -2,13 +2,14 @@
   command = "vite build"
   publish = "dist/client"
 
+# Main redirect for TanStack Start SSR
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/server"
+  status = 200
+
+# Fallback redirect
 [[redirects]]
   from = "/*"
   to = "/.netlify/functions/server.mjs"
   status = 200
-
-# Allow Facebook crawler
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Access-Control-Allow-Origin = "*"
