@@ -11,8 +11,7 @@ export const Route = createFileRoute("/")({
       { title: "Happy Mother's Day 2026 — A Loving Tribute to Mom" },
       {
         name: "description",
-        content:
-          "A heartfelt Mother's Day 2026 tribute with a warm song, gentle words, and love for the strongest, kindest woman we know.",
+        content: "A heartfelt Mother's Day 2026 tribute with a warm song, gentle words, and love for the strongest, kindest woman we know.",
       },
       { property: "og:title", content: "Happy Mother's Day 2026 ❤️" },
       {
@@ -20,29 +19,27 @@ export const Route = createFileRoute("/")({
         content: "To the strongest, kindest, and most loving woman we know.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://happymothersday2026.lovable.app/" },
+      { property: "og:url", content: "https://happymothersdaypo.netlify.app/" },
       { property: "og:site_name", content: "Happy Mother's Day 2026" },
-      { property: "og:image", content: "/og-image.jpg" },
-      { property: "og:image:secure_url", content: "/og-image.jpg" },
+      
+      // Full absolute URL for Facebook crawler
+      { property: "og:image", content: "https://happymothersdaypo.netlify.app/og-image.jpg" },
+      { property: "og:image:secure_url", content: "https://happymothersdaypo.netlify.app/og-image.jpg" },
       { property: "og:image:type", content: "image/jpeg" },
       { property: "og:image:width", content: "1216" },
       { property: "og:image:height", content: "640" },
       {
         property: "og:image:alt",
-        content:
-          "Happy Mother's Day 2026 — elegant floral card with the message 'We love you endlessly'.",
+        content: "Happy Mother's Day 2026 — elegant floral card with the message 'We love you endlessly'.",
       },
+
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Happy Mother's Day 2026 ❤️" },
       {
         name: "twitter:description",
         content: "To the strongest, kindest, and most loving woman we know.",
       },
-      { name: "twitter:image", content: "/og-image.jpg" },
-      {
-        name: "twitter:image:alt",
-        content: "Happy Mother's Day 2026 — floral tribute card.",
-      },
+      { name: "twitter:image", content: "https://happymothersdaypo.netlify.app/og-image.jpg" },
       { name: "theme-color", content: "#f5d6c6" },
     ],
     links: [
@@ -50,10 +47,6 @@ export const Route = createFileRoute("/")({
       { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16.png" },
       { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32.png" },
       { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap",
-      },
     ],
   }),
 });
@@ -62,7 +55,6 @@ function Index() {
   return (
     <main className="relative min-h-screen overflow-x-hidden">
       <FloatingPetals />
-
       {/* Soft radial glow overlay */}
       <div
         className="pointer-events-none fixed inset-0 z-0"
@@ -72,7 +64,6 @@ function Index() {
             "radial-gradient(ellipse at 50% 20%, oklch(0.95 0.08 35 / 0.5), transparent 60%)",
         }}
       />
-
       {/* HERO */}
       <section className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 py-24 text-center">
         <div className="fade-up mb-6 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card/70 backdrop-blur-sm border border-border">
@@ -81,7 +72,6 @@ function Index() {
             Mother's Day · 2026
           </span>
         </div>
-
         <h1
           className="fade-up text-glow font-serif text-6xl sm:text-7xl md:text-8xl lg:text-[9rem] leading-[1.05] text-foreground max-w-5xl"
           style={{
@@ -94,15 +84,12 @@ function Index() {
         >
           Happy Mother's Day
         </h1>
-
         <p className="fade-up-delay-1 mt-8 max-w-3xl font-serif italic text-2xl sm:text-3xl md:text-4xl text-foreground/80 leading-snug">
           To the strongest, kindest, and most loving woman we know.
         </p>
-
         <div className="fade-up-delay-2 mt-14 w-full flex justify-center">
           <AudioPlayer />
         </div>
-
         <div
           className="fade-up-delay-3 absolute bottom-8 left-1/2 -translate-x-1/2 text-sm text-muted-foreground tracking-wide flex items-center gap-2"
         >
@@ -156,9 +143,7 @@ function Index() {
               We love you, endlessly.
             </p>
           </div>
-
           <ShareButtons />
-
           <p className="text-sm text-muted-foreground pt-8 flex items-center gap-2">
             Made with <Heart className="w-3.5 h-3.5 text-primary fill-primary" /> in 2026
           </p>
