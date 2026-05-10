@@ -2,6 +2,7 @@
   command = "bun run build"
   publish = "dist/client"
 
+# Important for SSR (TanStack Start)
 [[redirects]]
   from = "/*"
   to = "/.netlify/functions/server"
